@@ -5,6 +5,8 @@ import { useRouter } from 'next/router';
 export const AuctionsList = ({ tokens }: { tokens: any[] }) => {
   const router = useRouter();
 
+  console.log({ tokens });
+
   return (
     <div css={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
       {tokens &&
